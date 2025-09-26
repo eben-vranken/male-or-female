@@ -11,10 +11,10 @@ import matplotlib.pyplot as plt
 
 # Properties
 DATA_PATH = "data/"
-visualize_example_waveform = False
-visualize_example_spectrogram_and_waveform = False
-visualize_example_spectrograms = False
-visualize_training = False
+visualize_example_waveform = True
+visualize_example_spectrogram_and_waveform = True
+visualize_example_spectrograms = True
+visualize_training = True
 
 def squeeze(audio, labels):
     audio = tf.squeeze(audio, axis=-1)
@@ -209,4 +209,5 @@ if __name__ == "__main__":
     # Evalutate the model
     model.evaluate(test_spectrogram_ds, return_dict=True)
 
-    plot_model(model, show_shapes=True, show_layer_names=True, to_file='model.png')
+    plot_model(model, show_shapes=True, show_layer_names=True, to_file='images/model.png')
+    
