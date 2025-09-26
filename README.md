@@ -9,6 +9,7 @@
 
 ```bash
 pip install tensorflow matplotlib numpy
+```
 
 ## Images
 
